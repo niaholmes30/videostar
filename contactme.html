@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Me!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="l2e">Become An Editor</h1>
+            <ul>
+                <li class="intro"><a href="index.html">Intro</a></li>
+                <li><a href="videostar.html">Video Star</a></li>
+                <li><a href="fanpages.html">Fan Pages</a></li>
+                <li id="current"><a href="contactme.html">Contact Me!</a></li>         
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="section13">
+                <h1>My Experience & Advice</h1>
+                <p>I started editing during the Pandemic, so I had a lot of time learn and troubleshoot the whole editing process. That's the main thing I want to highlight: <strong>editing is going to take time, so be patient with yourself and don't give up!</strong> I am still a learning things myself, and I have been editing for over 4 years now!</p> 
+                <p>Remember to have consistency! My current editing account does not display 4 years of growth because I switched editing accounts so often <strong>(do not do that!)</strong> This entire process will be extremely stressful, but you will always be proud of the end results, and you'll have fun if it's something you really like doing.</p>
+                <p>To the right, there's a form you can submit if you have any specific questions, or any requests for tutorials. I will answer all questions, and I will try to get a requested tutorial posted on YouTube ASAP!</p>
+            </div>
+            <div id="myForm">
+                <form action="https://formspree.io/f/xqapkvew" method="POST">
+                    <fieldset>
+                        <legend>How Can I Help?</legend>
+                        <label for="email_id">Email:</label>
+                        <input type="email" id="email_id" name="email" required>
+    
+                        <label for="options">Request Type:</label>
+                        <select id="options" name="options" required>
+                            <option value="question">Question</option>
+                            <option value="tut">Tutorial Request</option>
+                            <option value="other" selected>Other</option>
+                        </select>
+    
+                        <label for="your_input">Your Input:</label>
+                        <textarea id="your_input" name="your_input" required></textarea>
+    
+                        <input type="submit" value="Submit" id="submit">
+    
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li class="intro"><a href="index.html">Intro</a></li>
+            <li><a href="videostar.html">Video Star</a></li>
+            <li><a href="fanpages.html">Fan Pages</a></li>
+            <li id="current"><a href="contactme.html">Contact Me!</a></li>         
+        </ul>
+        <p>© Copyrights <span id="year"></span> by Nia Holmes. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
